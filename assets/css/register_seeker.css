@@ -1,0 +1,87 @@
+/* General body styles with a background image */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/EasyRecruit_User/assets/images/job_seeker_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* General styling for the select box */
+select {
+    width: 100%; /* Full width */
+    padding: 8px 16px; /* Padding inside the select */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for 3D effect */
+    background-color: rgba(246, 224, 251, 0.908); /* White background color */
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling for Safari and Chrome */
+    -moz-appearance: none; /* Remove default styling for Firefox */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M6%200C2.68629%200%200%202.68629%200%206C0%209.31371%202.68629%2012%206%2012C9.31371%2012%2012%209.31371%2012%206C12%202.68629%209.31371%200%206%200ZM3.35432%205.64645C3.14865%205.85211%203.14865%206.21437%203.35432%206.42003L5.83893%208.90463C6.04459%209.1103%206.40685%209.1103%206.61252%208.90463L9.09712%206.42003C9.30278%206.21437%209.30278%205.85211%209.09712%205.64645C8.89145%205.44078%208.52919%205.44078%208.32353%205.64645L6.22571%207.74427L4.12788%205.64645C3.92222%205.44078%203.55996%205.44078%203.35432%205.64645Z%22%20fill%3D%22%23434343%22%2F%3E%3C%2Fsvg%3E') right 10px center / 12px 12px no-repeat;
+    cursor: pointer; /* Change mouse cursor to pointer on hover */
+}
+
+/* Style for option hover */
+select:hover {
+    border-color: #46f577;
+}
+
+/* Focus styles */
+select:focus {
+    outline: none; /* Removes outline */
+    border-color: #0056b3; /* Blue border indicating focus */
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.25); /* Glowing effect */
+}
+
+/* Disabled select */
+select:disabled {
+    background-color: #eee; /* Grey background for disabled state */
+    color: #666; /* Grey text for disabled state */
+    cursor: not-allowed; /* Cursor to indicate the select is disabled */
+}
+
+.form-container {
+    margin:5% 0 0 0 ;
+    background: rgba(43, 13, 36, 0.8); /* Dark semi-transparent background */
+    padding: 0px 40px 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    max-width: 90%;
+    color: #fff; /* White text color for better contrast */
+}
+
+h1 {
+    color: #ecf0f1; /* Light grey color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="emails"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="url"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff; /* White border for inputs */
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #e74c3c; /* Red button for a bold look */
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #c0392b;
+}

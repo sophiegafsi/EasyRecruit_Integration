@@ -1,0 +1,107 @@
+/* General body styles with full background image */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/EasyRecruit_User/assets/images/login/login-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label {
+
+    color: #fff;
+ 
+
+}
+
+h3{
+
+    color: #7568ec;
+}
+.form-container {
+    background: rgba(29, 29, 25, 0.792); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(131, 126, 126, 0.3);
+    width: 350px;
+    max-width: 90%;
+    animation: appear 1s ease-out forwards;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    
+    background: rgba(250, 250, 250, 0.3);
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background for the submit button */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.error {
+    color: #f3f3f3; /* Red color for error messages */
+    font-size: 14px;
+    text-align: center;
+}
+
+.home-button {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db; /* Blue background for the home button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Styling for error messages */
+p.error {
+    padding: 10px;
+    background-color: rgba(255, 70, 70, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

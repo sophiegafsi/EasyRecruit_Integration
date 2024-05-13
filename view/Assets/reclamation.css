@@ -1,0 +1,185 @@
+/* Styles communs à toute la page */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: #264395;
+    margin: 0; /* Supprimer les marges par défaut du body */
+  }
+
+  /* Styles spécifiques au header */
+  .header-style {
+    background-color: #ffffff;
+    color: #000000; /* Changement de couleur du texte en noir */
+    padding: 10px 0; /* Réduction de l'espace intérieur du header */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-header img {
+    max-width: 700px; /* Réduction de la taille du logo */
+    height: auto;
+  }
+
+  .links-header a {
+    color: #000000; /* Changement de couleur des liens en noir */
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .links-header a:hover {
+    background-color: #ee3a87;
+    border-color: #ee3a87;
+    color: #ffffff; /* Changement de couleur au survol en blanc */
+  }
+
+  /* Styles spécifiques au bloc d'introduction */
+  .block-intro {
+    position: relative;
+    background-image: url('photos/slider-home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur d'arrière-plan semi-transparente */
+  }
+
+  .desc-intro {
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  .desc-style {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff; /* Changement de couleur du texte en blanc */
+  }
+
+  .desc-style span {
+    font-weight: normal;
+  }
+
+  .btn-decouvrir {
+    color: #ffffff;
+    background-color: #ee3a87;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-decouvrir:hover {
+    background-color: #ffffff;
+    color: #ee3a87;
+  }
+
+  /* Styles spécifiques au formulaire de contact */
+  .contact-container {
+  margin: 50px auto;
+  max-width: 700px; /* Ajustez la largeur selon vos besoins */
+  display: flex;
+  align-items: center; /* Centrer verticalement le contenu */
+  justify-content: center; /* Centrer horizontalement le contenu */
+}
+
+
+  .contact-image {
+      flex: 1; /* Prend autant d'espace que possible */
+      margin-right: 50px; /* Espace entre l'image et le formulaire */
+      margin-left: -50%; /* Décaler l'image vers la gauche */
+     
+
+  }
+
+  .contact-image img {
+      width: 100%; /* Pour remplir tout l'espace disponible */
+      border-radius: 10px; /* Ajouter une bordure arrondie à l'image si nécessaire */
+  }
+
+  .contact-form {
+      flex: 2; /* Prend deux fois moins d'espace que l'image */
+      border: 2px solid #264395;
+      border-radius: 10px;
+      padding: 20px;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #264395;
+    border-radius: 5px;
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */
+  }
+
+  .contact-form textarea {
+    height: 150px; /* Ajuster la hauteur de la zone de texte */
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: #264395;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #ee3a87; /* Changement de couleur au survol */
+  }
+
+  footer {
+    background-color: #264395;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .copy-right {
+    background-color: #ffffff; /* Couleur de fond de la partie du bas du footer */
+    color: #264395; /* Couleur du texte de la partie du bas du footer */
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-social img {
+    width: 30px; /* Taille des icônes de réseaux sociaux */
+  }
+
+  .error-message {
+    color: red;
+    font-size: 20 px;
+    margin-left: 5px;
+    top: -20px;
+  }

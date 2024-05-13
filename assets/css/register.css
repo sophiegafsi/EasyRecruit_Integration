@@ -1,0 +1,54 @@
+/* General body styles with a background image */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/EasyRecruit_User/assets/images/register/bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.registration-choice h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling buttons with transition for animation */
+.registration-options a.btn-register {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 25px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.registration-options a.btn-register:hover {
+    background-color: #004080;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Error message style if needed */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
